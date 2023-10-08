@@ -1,0 +1,125 @@
+html,
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: rgb(252, 247, 199);
+  overflow-x: hidden;
+}
+
+.offcanvas_showBtn {
+  display: flex;
+}
+
+#saveMsgArea {
+  padding: 20px;
+  background-color: rgba(0, 0, 0, 0.2);
+  border-radius: 30px;
+  position: fixed;
+  top: 60px;
+  left: 50%;
+  z-index: 10;
+}
+
+#saveMsg {
+  color: black;
+}
+
+.hidden {
+  overflow: hidden;
+}
+
+#gnb {
+  background-color: #e6daaa;
+  top: 0;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  position: fixed;
+  z-index: 2;
+}
+
+.btnArea {
+  position: absolute;
+  right: 10px;
+}
+
+.btn {
+  border: none;
+  padding: 5px 5px;
+  margin: 2px;
+  border-radius: 5px;
+  font-family: 'paybooc-Light', sans-serif;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+  text-decoration: none;
+  font-weight: 600;
+  transition: 0.25s;
+}
+
+.btn:hover {
+  background-color: black;
+  color: white;
+}
+
+#showBtn {
+  position: relative;
+}
+
+.txtName {
+  background-color: #e6daaa;
+}
+
+#txtName {
+  border: 1px solid rebeccapurple;
+  background-color: rgba(254, 234, 188, 0.2);
+  border-radius: 10px;
+  font-size: 25px;
+  font-family: 'Kanit', sans-serif;
+  font-weight: 700;
+}
+
+#content {
+  padding-left: 30px;
+  position: relative;
+  top: 41.5px;
+  width: 100%;
+}
+
+#txtContent {
+  font-size: 18px;
+  resize: none;
+  background-color: #fcf7c7;
+  width: 100%;
+  height: 700px;
+
+  border: none;
+  border-left: 2px solid rgb(208, 160, 144);
+  background-attachment: local;
+  background-image: linear-gradient(
+      to right,
+      rgb(252, 247, 199) 10px,
+      transparent 10px
+    ),
+    linear-gradient(to left, rgb(252, 247, 199) 10px, transparent 10px),
+    repeating-linear-gradient(
+      rgb(252, 247, 199),
+      rgb(252, 247, 199) 30px,
+      rgb(204, 204, 221) 30px,
+      rgb(204, 204, 221) 31px,
+      white 31px
+    );
+  line-height: 31px;
+  padding: 8px 10px;
+}
+
+#txtContent:focus {
+  outline: none;
+}
+
+#footer {
+  color: #ccc;
+  text-align: center;
+}
